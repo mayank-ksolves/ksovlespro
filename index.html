@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Ksolves Pro (AI)NNOVATION | Enterprise Agentic AI Solutions</title>
+<meta name="description" content="Ksolves delivers enterprise-grade agentic AI systems that are live in production. From intelligent automation to NL-to-SQL analytics, we help teams ship AI that actually works at scale."/>
+<meta name="keywords" content="enterprise AI solutions, agentic AI platform, AI automation, NL to SQL, low code AI builder, AI workflow automation, Ksolves AI, AgentFlow, DFManager, GenBI Suite, MindAI Ninja"/>
+<meta name="author" content="Ksolves India Limited"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.ksolves.com/ai"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.ksolves.com/ai"/>
+<meta property="og:title" content="Ksolves Pro (AI)NNOVATION | Enterprise Agentic AI Solutions"/>
+<meta property="og:description" content="Real AI systems, in production. Ksolves delivers agentic AI that turns small teams into powerhouses — shipping faster, smarter, and at scale."/>
+<meta property="og:site_name" content="Ksolves India Limited"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Ksolves Pro (AI)NNOVATION | Enterprise Agentic AI Solutions"/>
+<meta name="twitter:description" content="Real AI systems, in production. From AgentFlow to GenBI Suite, Ksolves delivers enterprise AI that works at scale."/>
+<meta name="twitter:site" content="@ksolves"/>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.ksolves.com/#organization",
+      "name": "Ksolves India Limited",
+      "url": "https://www.ksolves.com",
+      "logo": "https://www.ksolves.com/wp-content/uploads/ksLogo.svg",
+      "sameAs": [
+        "https://www.linkedin.com/company/ksolves",
+        "https://twitter.com/ksolves"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@ksolves.com",
+        "contactType": "customer support"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.ksolves.com/ai",
+      "url": "https://www.ksolves.com/ai",
+      "name": "Enterprise Agentic AI Solutions | Ksolves Pro (AI)NNOVATION",
+      "description": "Ksolves delivers enterprise-grade agentic AI systems in production. Explore use cases, products, and AI tools that help teams ship faster and smarter.",
+      "isPartOf": { "@id": "https://www.ksolves.com/#organization" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ksolves.com" },
+          { "@type": "ListItem", "position": 2, "name": "AI Solutions", "item": "https://www.ksolves.com/ai" }
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "name": "Ksolves AI Products",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "DFManager", "description": "Agentic AI platform for enterprise workflow automation, document parsing and decision routing." },
+        { "@type": "ListItem", "position": 2, "name": "MindAI Ninja", "description": "AI-powered QA testing that generates and maintains test suites autonomously." },
+        { "@type": "ListItem", "position": 3, "name": "AgentFlow", "description": "Low-code AI workflow builder used by 50,000+ business professionals." },
+        { "@type": "ListItem", "position": 4, "name": "GenBI Suite", "description": "Natural language to SQL analytics platform for instant self-service dashboards." }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --orange:#E8450A;
+  --orange-light:#FF6B35;
+  --navy:#0A0F1E;
+  --navy2:#111827;
+  --white:#FFFFFF;
+  --offwhite:#F4F6FA;
+  --text:#1A1A2E;
+  --muted:#6B7280;
+  --border:#E5E7EB;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--white);color:var(--text);line-height:1.6;overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,15,30,0.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px;max-width:1280px;margin:0 auto;padding:0 20px}
+.nav-logo{height:32px;min-width:120px;background:rgba(255,255,255,0.08);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:11px;color:rgba(255,255,255,0.4);font-weight:500;letter-spacing:.5px;text-decoration:none;border:1px dashed rgba(255,255,255,0.15);padding:0 12px}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:var(--orange);color:#fff;padding:9px 18px;border-radius:3px;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
+.nav-cta:hover{background:var(--orange-light)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:22px;height:2px;background:rgba(255,255,255,0.7);border-radius:2px;transition:all .3s}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(10,15,30,0.98);padding:20px;z-index:199;border-bottom:1px solid rgba(255,255,255,0.08)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 0;color:rgba(255,255,255,0.7);text-decoration:none;font-size:15px;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.06)}
+.mobile-menu a:last-child{border:none;margin-top:12px;background:var(--orange);color:#fff;text-align:center;padding:13px;border-radius:3px;font-weight:600}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:100vh;background:var(--navy);display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding-top:60px}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(232,69,10,0.12) 0%,transparent 70%),radial-gradient(ellipse 60% 80% at 10% 80%,rgba(59,111,232,0.08) 0%,transparent 60%);pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-inner{max-width:1280px;margin:0 auto;padding:60px 20px 70px;position:relative;z-index:2}
+.hero-label{display:inline-flex;align-items:center;gap:8px;background:rgba(232,69,10,0.12);border:1px solid rgba(232,69,10,0.3);border-radius:2px;padding:6px 12px;font-size:10px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:24px}
+.hero-label::before{content:'';width:6px;height:6px;background:var(--orange);border-radius:50%;flex-shrink:0;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.hero h1{font-size:clamp(34px,7vw,72px);font-weight:800;line-height:1.07;color:#fff;letter-spacing:-2px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero-sub{font-size:clamp(15px,2.2vw,18px);color:rgba(255,255,255,0.55);line-height:1.8;max-width:540px;margin-bottom:36px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{background:var(--orange);color:#fff;padding:14px 26px;border-radius:3px;text-decoration:none;font-weight:600;font-size:14px;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--orange-light)}
+.btn-ghost{background:transparent;color:#fff;padding:14px 26px;border-radius:3px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid rgba(255,255,255,0.25);transition:all .2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.6)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.08);border-radius:4px;overflow:hidden}
+.hstat{padding:22px 16px;background:rgba(255,255,255,0.03);transition:background .2s}
+.hstat:hover{background:rgba(232,69,10,0.08)}
+.hstat-num{font-size:clamp(24px,4vw,38px);font-weight:900;color:#fff;letter-spacing:-1.5px;line-height:1}
+.hstat-num span{color:var(--orange)}
+.hstat-label{font-size:11px;color:rgba(255,255,255,0.4);margin-top:6px;font-weight:500;text-transform:uppercase;letter-spacing:.5px;line-height:1.4}
+
+/* ── TICKER ── */
+.ticker-wrap{background:rgba(232,69,10,0.95);overflow:hidden;padding:10px 0}
+.ticker-track{display:flex;white-space:nowrap;animation:scroll 50s linear infinite}
+.ticker-track:hover{animation-play-state:paused}
+.tick{display:inline-flex;align-items:center;gap:10px;padding:0 40px;font-size:11px;color:rgba(255,255,255,0.9);font-weight:500}
+.tick::after{content:'·';color:rgba(255,255,255,0.4);margin-left:40px}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── SHARED ── */
+.sec-label{font-size:11px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1.8px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.sec-label::before{content:'';width:20px;height:2px;background:var(--orange);flex-shrink:0}
+.sec-title{font-size:clamp(26px,4vw,44px);font-weight:800;color:var(--text);letter-spacing:-1px;line-height:1.1;margin-bottom:12px}
+.sec-sub{font-size:15px;color:var(--muted);max-width:560px;line-height:1.75}
+
+/* ── INTRO ── */
+.intro-band{background:var(--navy2);padding:64px 20px}
+.intro-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.intro-quote{font-size:clamp(20px,3vw,32px);font-weight:700;color:#fff;line-height:1.4;letter-spacing:-0.3px}
+.intro-quote span{color:var(--orange)}
+.intro-body{font-size:15px;color:rgba(255,255,255,0.5);line-height:1.85}
+.intro-body p+p{margin-top:14px}
+
+/* ── TABS ── */
+.tabs-section{background:var(--offwhite);padding:80px 20px}
+.tabs-inner{max-width:1280px;margin:0 auto}
+.tab-nav{display:flex;gap:0;border-bottom:2px solid var(--border);margin-top:40px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tab-nav::-webkit-scrollbar{display:none}
+.tab-btn{padding:14px 22px;font-size:13px;font-weight:600;color:var(--muted);background:none;border:none;cursor:pointer;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .2s}
+.tab-btn.active{color:var(--orange);border-bottom-color:var(--orange)}
+.tab-panels{padding-top:40px}
+.tab-panel{display:none;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.tab-panel.active{display:grid}
+.panel-title{font-size:clamp(18px,2.5vw,26px);font-weight:800;color:var(--text);letter-spacing:-0.4px;margin-bottom:12px;line-height:1.3}
+.panel-body{font-size:14px;color:var(--muted);line-height:1.85;margin-bottom:24px}
+.panel-metrics{display:flex;gap:28px;margin-bottom:24px;flex-wrap:wrap}
+.pm{border-left:3px solid var(--orange);padding-left:14px}
+.pm-num{font-size:28px;font-weight:900;color:var(--text);letter-spacing:-1px;line-height:1}
+.pm-num span{color:var(--orange)}
+.pm-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:3px}
+.panel-status{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:5px 11px;border-radius:2px;text-transform:uppercase;letter-spacing:.7px}
+.s-live{background:#DCFCE7;color:#15803D}
+.s-soon{background:#FEF3C7;color:#B45309}
+.panel-visual{background:var(--navy);border-radius:6px;padding:28px 28px 20px;display:flex;flex-direction:column;min-height:240px}
+.pv-label{font-size:11px;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:.9px;margin-bottom:18px}
+.vis-bars{display:flex;align-items:flex-end;gap:6px;height:140px}
+.vbar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}
+.vbar{width:100%;min-height:6px;background:rgba(255,255,255,0.15);border-radius:3px 3px 0 0;transition:background .3s;flex-shrink:0}
+.vbar.hi{background:var(--orange)}
+.vbar-lbl{font-size:9px;color:rgba(255,255,255,0.4);text-align:center;white-space:nowrap;flex-shrink:0;line-height:1}
+.pv-footer{font-size:11px;color:rgba(255,255,255,0.35);margin-top:14px;border-top:1px solid rgba(255,255,255,0.07);padding-top:12px;line-height:1.6}
+
+/* ── PRODUCTS ── */
+.products-bg{background:var(--navy)}
+.products-inner{max-width:1280px;margin:0 auto;padding:80px 20px}
+.products-bg .sec-label{color:rgba(232,69,10,0.9)}
+.products-bg .sec-title{color:#fff}
+.products-bg .sec-sub{color:rgba(255,255,255,0.4)}
+.products-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:44px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06)}
+.prod-card{background:var(--navy2);padding:36px 28px;transition:background .25s;position:relative;overflow:hidden}
+.prod-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.prod-card:hover{background:#16202F}
+.prod-card:hover::after{transform:scaleX(1)}
+.prod-icon{width:44px;height:44px;border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;background:rgba(232,69,10,0.12);border:1px solid rgba(232,69,10,0.2)}
+.prod-type{font-size:10px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1.4px;margin-bottom:7px}
+.prod-name{font-size:20px;font-weight:800;color:#fff;margin-bottom:9px;letter-spacing:-0.3px}
+.prod-desc{font-size:13px;color:rgba(255,255,255,0.42);line-height:1.75}
+.prod-link{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:600;color:var(--orange);text-decoration:none}
+.prod-link svg{transition:transform .2s}
+.prod-link:hover svg{transform:translateX(4px)}
+
+/* ── USE CASES ── */
+.cases-inner{max-width:1280px;margin:0 auto;padding:80px 20px}
+.cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.case-card{position:relative;overflow:hidden;border-radius:6px;min-height:320px;display:flex;flex-direction:column;justify-content:flex-end;cursor:default;}
+.case-card-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s ease}
+.case-card:hover .case-card-bg{transform:scale(1.04)}
+.case-card-overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(10,15,30,0.97) 0%, rgba(10,15,30,0.7) 50%, rgba(10,15,30,0.2) 100%);transition:background .3s}
+.case-card:hover .case-card-overlay{background:linear-gradient(to top, rgba(10,15,30,1) 0%, rgba(10,15,30,0.75) 55%, rgba(10,15,30,0.25) 100%)}
+.case-card-content{position:relative;z-index:2;padding:28px 26px}
+.case-num{font-size:10px;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1.8px;margin-bottom:12px}
+.case-title{font-size:clamp(15px,1.5vw,19px);font-weight:800;color:#fff;line-height:1.35;margin-bottom:10px;letter-spacing:-0.3px}
+.case-desc{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s ease, opacity .3s ease}
+.case-card:hover .case-desc{max-height:100px;opacity:1}
+.case-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.12)}
+.case-kpi{font-size:26px;font-weight:900;color:var(--orange);letter-spacing:-1px;line-height:1}
+.case-kpi-label{font-size:10px;color:rgba(255,255,255,0.4);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+.case-badge{font-size:10px;font-weight:700;padding:4px 10px;border-radius:2px;text-transform:uppercase;letter-spacing:.6px}
+.b-live{background:rgba(22,163,74,0.2);color:#4ade80;border:1px solid rgba(74,222,128,0.25)}
+.b-soon{background:rgba(180,83,9,0.2);color:#fbbf24;border:1px solid rgba(251,191,36,0.25)}
+
+/* ── FEED ── */
+.feed-bg{background:var(--offwhite)}
+.feed-inner{max-width:1280px;margin:0 auto;padding:80px 20px}
+.feed-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:32px;margin-bottom:32px}
+.ftab{padding:8px 16px;border-radius:2px;border:1px solid var(--border);background:#fff;font-size:12px;font-weight:600;cursor:pointer;color:var(--muted);transition:all .2s}
+.ftab.active,.ftab:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feed-card{background:#fff;border:1px solid var(--border);border-radius:4px;padding:22px 20px;transition:all .2s}
+.feed-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.06);transform:translateY(-2px)}
+.fc-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:6px}
+.fc-date{font-size:11px;color:var(--muted);font-weight:500}
+.fc-badge{font-size:10px;font-weight:700;padding:3px 9px;border-radius:2px;text-transform:uppercase;letter-spacing:.5px}
+.fb-uc{background:#FFF0EB;color:var(--orange)}
+.fb-op{background:#ECFDF5;color:#059669}
+.fb-lrn{background:#EEF2FF;color:#4F46E5}
+.fb-tl{background:#F5F3FF;color:#7C3AED}
+.fb-ms{background:#FFFBEB;color:#D97706}
+.fc-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.4}
+.fc-body{font-size:12px;color:var(--muted);line-height:1.7;margin-bottom:12px}
+.fc-metric{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;background:var(--offwhite);border-radius:2px}
+.fc-num{font-size:13px;font-weight:800;color:var(--orange)}
+.fc-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+
+/* ── INVESTORS ── */
+.inv-bg{background:var(--navy);padding:80px 20px}
+.inv-inner{max-width:1280px;margin:0 auto}
+.inv-bg .sec-label{color:rgba(232,69,10,0.9)}
+.inv-bg .sec-title{color:#fff}
+.inv-bg .sec-sub{color:rgba(255,255,255,0.4)}
+.inv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,0.06);margin-top:48px}
+.inv-tile{background:var(--navy2);padding:32px 26px;transition:background .2s}
+.inv-tile:hover{background:#16202F}
+.inv-tile-num{font-size:36px;font-weight:900;color:#fff;letter-spacing:-1.5px;line-height:1;margin-bottom:5px}
+.inv-tile-num span{color:var(--orange)}
+.inv-tile-label{font-size:11px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:.8px;line-height:1.4}
+.inv-badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}
+.inv-badge{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.55);padding:9px 16px;border-radius:3px;font-size:12px;font-weight:600}
+.inv-badge svg{color:var(--orange);flex-shrink:0}
+
+/* ── CTA ── */
+.cta-band{background:var(--orange);padding:72px 20px;text-align:center}
+.cta-inner{max-width:620px;margin:0 auto}
+.cta-band h2{font-size:clamp(24px,4vw,40px);font-weight:800;color:#fff;letter-spacing:-0.7px;margin-bottom:14px;line-height:1.15}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:30px;line-height:1.75}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{background:#fff;color:var(--orange);padding:14px 28px;border-radius:3px;text-decoration:none;font-weight:700;font-size:14px}
+.btn-outline-white{background:transparent;color:#fff;padding:14px 28px;border-radius:3px;text-decoration:none;font-weight:600;font-size:14px;border:1.5px solid rgba(255,255,255,0.45)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy2);border-top:1px solid rgba(255,255,255,0.06);padding:24px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-copy{font-size:12px;color:rgba(255,255,255,0.28)}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
+.foot-links a{color:rgba(255,255,255,0.35);text-decoration:none;font-size:12px;transition:color .2s}
+.foot-links a:hover{color:rgba(255,255,255,0.8)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .cases-grid{grid-template-columns:repeat(2,1fr)}
+  .case-card:nth-child(3n){border-right:1px solid var(--border)}
+  .case-card:nth-child(2n){border-right:none}
+  .case-card:nth-last-child(-n+3){border-bottom:1px solid var(--border)}
+  .case-card:nth-last-child(-n+2){border-bottom:none}
+  .feed-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .hamburger{display:flex}
+
+  .hero-inner{padding:48px 20px 60px}
+  .hero h1{letter-spacing:-1.5px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hstat{padding:18px 14px}
+
+  .intro-inner{grid-template-columns:1fr;gap:28px}
+
+  .tabs-section{padding:60px 20px}
+  .tab-panel.active{display:flex;flex-direction:column;gap:32px}
+  .panel-visual{min-height:180px}
+
+  .products-bg .products-inner{padding:60px 20px}
+  .products-grid{grid-template-columns:1fr}
+
+  .cases-inner{padding:60px 20px}
+  .cases-grid{grid-template-columns:1fr}
+  .case-card{border-right:none !important;border-bottom:1px solid var(--border) !important}
+  .case-card:last-child{border-bottom:none !important}
+
+  .feed-inner{padding:60px 20px}
+  .feed-grid{grid-template-columns:1fr}
+  .feed-tabs{gap:6px}
+  .ftab{font-size:11px;padding:7px 12px}
+
+  .inv-bg{padding:60px 20px}
+  .inv-grid{grid-template-columns:repeat(2,1fr)}
+
+  .cta-band{padding:56px 20px}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .btn-white,.btn-outline-white{text-align:center}
+
+  footer{flex-direction:column;align-items:flex-start;gap:12px}
+  .foot-links{gap:16px}
+}
+
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hstat-num{font-size:26px}
+  .hstat-label{font-size:10px}
+  .hero-ctas{flex-direction:column}
+  .btn-primary,.btn-ghost{text-align:center;justify-content:center}
+  .inv-grid{grid-template-columns:1fr 1fr}
+  .inv-tile-num{font-size:28px}
+  .panel-metrics{gap:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">YOUR LOGO</a>
+    <ul class="nav-links">
+      <li><a href="#how">How We Work</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#cases">Use Cases</a></li>
+      <li><a href="#feed">AI Feed</a></li>
+      <li><a href="#investors">Investors</a></li>
+    </ul>
+    <a href="mailto:contact@ksolves.com" class="nav-cta">Get in Touch</a>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#how" onclick="closeMenu()">How We Work</a>
+  <a href="#products" onclick="closeMenu()">Products</a>
+  <a href="#cases" onclick="closeMenu()">Use Cases</a>
+  <a href="#feed" onclick="AI Feed" onclick="closeMenu()">AI Feed</a>
+  <a href="#investors" onclick="closeMenu()">Investors</a>
+  <a href="mailto:contact@ksolves.com" onclick="closeMenu()">Get in Touch</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-label">Ksolves Pro (AI)NNOVATION</p>
+    <h1>AI Has Moved<br>Beyond Pilots.<br><em>Enterprises Must Too.</em></h1>
+    <p class="hero-sub">We help engineering and business teams stop experimenting and start shipping. Real AI systems, in production, doing work that used to take entire departments.</p>
+    <div class="hero-ctas">
+      <a href="#cases" class="btn-primary">
+        See What We Have Built
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#investors" class="btn-ghost">Investor Overview</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-num">11<span>+</span></div><div class="hstat-label">AI Projects Delivered</div></div>
+      <div class="hstat"><div class="hstat-num">70<span>%</span></div><div class="hstat-label">Average Team Size Reduced</div></div>
+      <div class="hstat"><div class="hstat-num">90<span>%</span></div><div class="hstat-label">Faster Dashboard Builds</div></div>
+      <div class="hstat"><div class="hstat-num">3<span>x</span></div><div class="hstat-label">Faster Code Delivery</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="tick">Case resolution now handled by 2 engineers instead of 10</span>
+    <span class="tick">Analysts build dashboards in minutes, not days</span>
+    <span class="tick">Claude AI is now part of 6 core engineering workflows</span>
+    <span class="tick">50,000 employees building AI flows without writing a single line of code</span>
+    <span class="tick">Customer upsell strategies generated 10x faster with AI</span>
+    <span class="tick">Manual data prep work cut by 80 percent</span>
+    <span class="tick">Developers shipping features three times faster with Cursor</span>
+    <span class="tick">Case resolution now handled by 2 engineers instead of 10</span>
+    <span class="tick">Analysts build dashboards in minutes, not days</span>
+    <span class="tick">Claude AI is now part of 6 core engineering workflows</span>
+    <span class="tick">50,000 employees building AI flows without writing a single line of code</span>
+    <span class="tick">Customer upsell strategies generated 10x faster with AI</span>
+    <span class="tick">Manual data prep work cut by 80 percent</span>
+    <span class="tick">Developers shipping features three times faster with Cursor</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="intro-band" aria-label="Our Mission">
+  <div class="intro-inner">
+    <h2 class="intro-quote">
+      Most teams are running AI experiments. <span>Very few are running AI in production.</span>
+    </h2>
+    <div class="intro-body">
+      <p>There is a gap between what gets demoed and what actually works at scale. Fragile pipelines, disconnected tools, and unclear ownership keep AI locked in the lab.</p>
+      <p>At Ksolves, we close that gap. We build AI into the way your teams work every day, not as a side project, but as the actual system doing the job.</p>
+    </div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-section" id="how">
+  <div class="tabs-inner">
+    <p class="sec-label">How We Work</p>
+    <h2 class="sec-title">Four Ways We Bring AI to Life</h2>
+    <p class="sec-sub">Each of these areas represents work we have done, shipped, and are actively running for our teams and clients.</p>
+    <div class="tab-nav">
+      <button class="tab-btn active" onclick="switchTab('t1',this)">Engineering Productivity</button>
+      <button class="tab-btn" onclick="switchTab('t2',this)">Business Automation</button>
+      <button class="tab-btn" onclick="switchTab('t3',this)">Data and Analytics</button>
+      <button class="tab-btn" onclick="switchTab('t4',this)">Agentic Operations</button>
+    </div>
+    <div class="tab-panels">
+
+      <div class="tab-panel active" id="t1">
+        <div>
+          <div class="panel-title">We put AI inside the way engineers write and ship code</div>
+          <p class="panel-body">From the moment a developer opens their editor to the moment code hits production, AI is involved. We have rolled out Cursor IDE and Claude across five engineering teams, and the results are clear. Features that used to take a week ship in two days. Test coverage goes up. And engineers actually enjoy the workflow.</p>
+          <div class="panel-metrics">
+            <div class="pm"><div class="pm-num">3<span>x</span></div><div class="pm-label">Faster Shipping</div></div>
+            <div class="pm"><div class="pm-num">70<span>%</span></div><div class="pm-label">Less Manual QA</div></div>
+          </div>
+          <span class="panel-status s-live">
+            <svg width="8" height="8" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#15803D"/></svg>
+            Live in Production
+          </span>
+        </div>
+        <div class="panel-visual">
+          <div class="pv-label">Deploy frequency before and after AI rollout</div>
+          <div class="vis-bars">
+            <div class="vbar-wrap"><div class="vbar" style="height:35%"></div><div class="vbar-lbl">Q1</div></div>
+            <div class="vbar-wrap"><div class="vbar" style="height:42%"></div><div class="vbar-lbl">Q2</div></div>
+            <div class="vbar-wrap"><div class="vbar" style="height:50%"></div><div class="vbar-lbl">Q3</div></div>
+            <div class="vbar-wrap"><div class="vbar" style="height:47%"></div><div class="vbar-lbl">Q4</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:80%"></div><div class="vbar-lbl">Q1 26</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:100%"></div><div class="vbar-lbl">Q2 26</div></div>
+          </div>
+          <div class="pv-footer">Cursor IDE and Claude across 5 teams. Feature delivery time down by roughly 60 percent.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="t2">
+        <div>
+          <div class="panel-title">Business teams building their own AI workflows, without engineers</div>
+          <p class="panel-body">AgentFlow started as an internal tool and became something much bigger. Today, over 50,000 employees use it to build and run AI workflows through a simple drag-and-drop interface. No engineers needed. No backlog tickets. Just business people solving business problems at the speed they actually need.</p>
+          <div class="panel-metrics">
+            <div class="pm"><div class="pm-num">50K<span>+</span></div><div class="pm-label">Active Users</div></div>
+            <div class="pm"><div class="pm-num">25<span>%</span></div><div class="pm-label">Efficiency Uplift</div></div>
+          </div>
+          <span class="panel-status s-live">
+            <svg width="8" height="8" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#15803D"/></svg>
+            Live in Production
+          </span>
+        </div>
+        <div class="panel-visual">
+          <div class="pv-label">AgentFlow active users over six months</div>
+          <div class="vis-bars">
+            <div class="vbar-wrap"><div class="vbar" style="height:18%"></div><div class="vbar-lbl">Jan</div></div>
+            <div class="vbar-wrap"><div class="vbar" style="height:32%"></div><div class="vbar-lbl">Feb</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:50%"></div><div class="vbar-lbl">Mar</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:68%"></div><div class="vbar-lbl">Apr</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:84%"></div><div class="vbar-lbl">May</div></div>
+            <div class="vbar-wrap"><div class="vbar hi" style="height:100%"></div><div class="vbar-lbl">Jun</div></div>
+          </div>
+          <div class="pv-footer">50,000 active users. Not a single line of code written by any of them.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="t3">
+        <div>
+          <div class="panel-title">Analysts asking questions in plain English and getting real answers</div>
+          <p class="panel-body">The GenBI Suite replaces the back-and-forth between analysts and engineers. Instead of waiting two days for a dashboard, analysts type what they want to know, and the system writes the SQL, pulls the data, and builds the chart. Works across PostgreSQL, Druid, and SQLite, in seconds.</p>
+          <div class="panel-metrics">
+            <div class="pm"><div class="pm-num">90<span>%</span></div><div class="pm-label">Faster Turnaround</div></div>
+            <div class="pm"><div class="pm-num">Zero</div><div class="pm-label">Tech Dependency</div></div>
+          </div>
+          <span class="panel-status s-live">
+            <svg width="8" height="8" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#15803D"/></svg>
+            Live in Production
+          </span>
+        </div>
+        <div class="panel-visual">
+          <div class="pv-label">Time to build a dashboard, before and after</div>
+          <div class="vis-bars">
+            <div class="vbar-wrap" style="flex:3"><div class="vbar" style="height:100%"></div><div class="vbar-lbl">Before AI</div></div>
+            <div class="vbar-wrap" style="flex:3"><div class="vbar hi" style="height:10%"></div><div class="vbar-lbl">With GenBI</div></div>
+          </div>
+          <div class="pv-footer">From a 48 hour wait to under five minutes. Same data. Same quality. No SQL knowledge needed.</div>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="t4">
+        <div>
+          <div class="panel-title">Agents handling the repetitive, high-stakes work so your team does not have to</div>
+          <p class="panel-body">DFManager is our agentic operations platform. It reads documents, routes decisions, and runs multi-step workflows without anyone in the loop unless a human sign-off is actually needed. One team cut their case resolution headcount from ten to two or three. The engineers who remained said they finally had time to do real engineering.</p>
+          <div class="panel-metrics">
+            <div class="pm"><div class="pm-num">70<span>%</span></div><div class="pm-label">Overhead Reduced</div></div>
+            <div class="pm"><div class="pm-num">10<span>x</span></div><div class="pm-label">Faster Resolution</div></div>
+          </div>
+          <span class="panel-status s-live">
+            <svg width="8" height="8" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="#15803D"/></svg>
+            Live in Production
+          </span>
+        </div>
+        <div class="panel-visual">
+          <div class="pv-label">Engineers needed to resolve a case</div>
+          <div class="vis-bars">
+            <div class="vbar-wrap" style="flex:3"><div class="vbar" style="height:100%"></div><div class="vbar-lbl">Before</div></div>
+            <div class="vbar-wrap" style="flex:3"><div class="vbar hi" style="height:22%"></div><div class="vbar-lbl">With DFManager</div></div>
+          </div>
+          <div class="pv-footer">A team of 10 is now a team of 2 to 3. The others moved on to higher value work.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="products-bg" id="products" aria-label="Our AI Products">
+  <div class="products-inner">
+    <p class="sec-label">Our Products</p>
+    <h2 class="sec-title" style="color:#fff">What We Have Built</h2>
+    <p class="sec-sub">Four products, each one solving a real problem we kept running into with clients and our own teams.</p>
+    <div class="products-grid">
+      <article class="prod-card">
+        <div class="prod-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8450A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <p class="prod-type">Agentic AI Platform</p>
+        <h3 class="prod-name">DFManager</h3>
+        <p class="prod-desc">Handles document parsing, decision routing, and multi-step agent workflows automatically. Built for operations teams that are tired of babysitting manual processes. Reduces overhead by up to 70 percent.</p>
+        <a href="#" class="prod-link" aria-label="Learn more about DFManager">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="prod-card">
+        <div class="prod-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8450A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg></div>
+        <p class="prod-type">AI-Powered Testing</p>
+        <h3 class="prod-name">MindAI Ninja</h3>
+        <p class="prod-desc">Writes tests, runs them, and keeps them up to date as your code changes. QA teams spend less time on maintenance and more time on the edge cases that actually matter.</p>
+        <a href="#" class="prod-link" aria-label="Learn more about MindAI Ninja">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="prod-card">
+        <div class="prod-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8450A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+        <p class="prod-type">Low-Code AI Builder</p>
+        <h3 class="prod-name">AgentFlow</h3>
+        <p class="prod-desc">A drag-and-drop platform that lets business users build and run AI workflows themselves. No engineering queue, no waiting. Over 50,000 people use it today without writing a single line of code.</p>
+        <a href="#" class="prod-link" aria-label="Learn more about AgentFlow">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </article>
+      <article class="prod-card">
+        <div class="prod-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8450A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <p class="prod-type">NL to Analytics</p>
+        <h3 class="prod-name">GenBI Suite</h3>
+        <p class="prod-desc">Type a question in plain English. Get a chart. It translates natural language into SQL, runs the query, and renders the result. Works on PostgreSQL, Druid, and SQLite.</p>
+        <a href="#" class="prod-link" aria-label="Learn more about GenBI Suite">Learn more <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section id="cases" aria-label="AI Use Cases">
+  <div class="cases-inner">
+    <p class="sec-label">Proven Results</p>
+    <h2 class="sec-title">Work We Are Proud Of</h2>
+    <p class="sec-sub">These are not hypothetical scenarios. Each one is something we built, shipped, and measured.</p>
+    <div class="cases-grid">
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#1a2a4a 0%,#0d1f3c 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.07" viewBox="0 0 200 200"><circle cx="160" cy="40" r="80" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 01</div>
+          <div class="case-title">A 10-person support team is now a team of two or three</div>
+          <div class="case-desc">An agentic system reads the logs, finds the relevant history, and drafts the fix. Engineers review and approve. That is the whole job now.</div>
+          <div class="case-bottom"><div><div class="case-kpi">70%</div><div class="case-kpi-label">Fewer engineers needed</div></div><span class="case-badge b-live">Live</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#2a1a0d 0%,#1a0f05 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.08" viewBox="0 0 200 200"><rect x="60" y="60" width="140" height="140" rx="20" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 02</div>
+          <div class="case-title">Analysts stopped waiting two days for dashboards</div>
+          <div class="case-desc">They type what they want to know. The system writes the SQL, runs it, and builds the chart. No tickets, no waiting, no SQL knowledge needed.</div>
+          <div class="case-bottom"><div><div class="case-kpi">90%</div><div class="case-kpi-label">Faster than before</div></div><span class="case-badge b-live">Live</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#0d2a1a 0%,#061a0f 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.07" viewBox="0 0 200 200"><polygon points="100,10 190,190 10,190" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 03</div>
+          <div class="case-title">50,000 employees building AI tools without a single engineer involved</div>
+          <div class="case-desc">AgentFlow gave business teams the ability to build workflows themselves. Adoption was faster than anyone expected.</div>
+          <div class="case-bottom"><div><div class="case-kpi">25%</div><div class="case-kpi-label">Efficiency uplift</div></div><span class="case-badge b-soon">Scaling</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#2a0d1a 0%,#1a0610 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.08" viewBox="0 0 200 200"><circle cx="40" cy="160" r="100" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 04</div>
+          <div class="case-title">Customer success managers doing research in minutes, not hours</div>
+          <div class="case-desc">An AI agent pulls together CRM data, support history, and market signals, then writes the upsell brief. Work that took a morning now takes ten minutes.</div>
+          <div class="case-bottom"><div><div class="case-kpi">10x</div><div class="case-kpi-label">Faster research</div></div><span class="case-badge b-live">Live</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#1a1a0d 0%,#111106 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.07" viewBox="0 0 200 200"><rect x="10" y="10" width="90" height="90" rx="10" fill="white"/><rect x="100" y="100" width="90" height="90" rx="10" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 05</div>
+          <div class="case-title">Data formatting that used to take a full day now runs itself</div>
+          <div class="case-desc">Customers send Excel files in their own format. The AI reads instructions, writes a Python script, and converts it. Works on every future file too.</div>
+          <div class="case-bottom"><div><div class="case-kpi">80%</div><div class="case-kpi-label">Less manual effort</div></div><span class="case-badge b-soon">Scaling</span></div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-card-bg" style="background:linear-gradient(135deg,#0d1a2a 0%,#06111a 100%)">
+          <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.07" viewBox="0 0 200 200"><ellipse cx="100" cy="100" rx="120" ry="60" fill="white"/></svg>
+        </div>
+        <div class="case-card-overlay"></div>
+        <div class="case-card-content">
+          <div class="case-num">Case 06</div>
+          <div class="case-title">Upgrade planning that used to require weeks of back and forth</div>
+          <div class="case-desc">Describe the upgrade in plain language. The agent checks constraints, finds blockers, and writes the full plan. What took a week now takes an afternoon.</div>
+          <div class="case-bottom"><div><div class="case-kpi">3x</div><div class="case-kpi-label">Faster planning</div></div><span class="case-badge b-soon">Scaling</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEED -->
+<div class="feed-bg" id="feed">
+  <div class="feed-inner">
+    <div class="sec-label">Weekly AI Feed</div>
+    <div class="sec-title">What We Shipped This Week</div>
+    <p class="sec-sub">A running log of what the Ksolves AI team has built, learned, and shipped. Updated every week.</p>
+    <div class="feed-tabs">
+      <button class="ftab active" onclick="filterFeed('all',this)">All</button>
+      <button class="ftab" onclick="filterFeed('uc',this)">Use Cases</button>
+      <button class="ftab" onclick="filterFeed('op',this)">Optimizations</button>
+      <button class="ftab" onclick="filterFeed('lrn',this)">Learnings</button>
+      <button class="ftab" onclick="filterFeed('tl',this)">AI Tools</button>
+      <button class="ftab" onclick="filterFeed('ms',this)">Milestones</button>
+    </div>
+    <div class="feed-grid" id="feedGrid">
+      <div class="feed-card" data-cat="uc">
+        <div class="fc-top"><span class="fc-date">24 Feb 2026</span><span class="fc-badge fb-uc">Use Case</span></div>
+        <div class="fc-title">We cut a 10-person support team to two or three</div>
+        <div class="fc-body">The agentic case resolution system now handles the full cycle from log reading to draft fix. Engineers validate. That is all they do now.</div>
+        <div class="fc-metric"><span class="fc-num">70%</span><span class="fc-lbl">Fewer engineers needed</span></div>
+      </div>
+      <div class="feed-card" data-cat="op">
+        <div class="fc-top"><span class="fc-date">22 Feb 2026</span><span class="fc-badge fb-op">Optimization</span></div>
+        <div class="fc-title">Dashboards in seconds, not days</div>
+        <div class="fc-body">Analysts type what they want, the system builds the chart. The two-day turnaround is gone.</div>
+        <div class="fc-metric"><span class="fc-num">90%</span><span class="fc-lbl">Faster than before</span></div>
+      </div>
+      <div class="feed-card" data-cat="lrn">
+        <div class="fc-top"><span class="fc-date">20 Feb 2026</span><span class="fc-badge fb-lrn">Learning</span></div>
+        <div class="fc-title">How we tripled output quality from Claude with better prompts</div>
+        <div class="fc-body">Role assignment, clear constraints, and a few examples in the system prompt made a bigger difference than we expected.</div>
+        <div class="fc-metric"><span class="fc-num">3x</span><span class="fc-lbl">Better output quality</span></div>
+      </div>
+      <div class="feed-card" data-cat="tl">
+        <div class="fc-top"><span class="fc-date">18 Feb 2026</span><span class="fc-badge fb-tl">AI Tool</span></div>
+        <div class="fc-title">Cursor is now standard across five engineering teams</div>
+        <div class="fc-body">The developers who were skeptical are now the loudest advocates.</div>
+        <div class="fc-metric"><span class="fc-num">3x</span><span class="fc-lbl">Faster feature delivery</span></div>
+      </div>
+      <div class="feed-card" data-cat="ms">
+        <div class="fc-top"><span class="fc-date">15 Feb 2026</span><span class="fc-badge fb-ms">Milestone</span></div>
+        <div class="fc-title">AgentFlow hit 50,000 active users</div>
+        <div class="fc-body">Business users across the org are building real workflows, and most have never written a line of code in their life.</div>
+        <div class="fc-metric"><span class="fc-num">50K+</span><span class="fc-lbl">Active users</span></div>
+      </div>
+      <div class="feed-card" data-cat="uc">
+        <div class="fc-top"><span class="fc-date">12 Feb 2026</span><span class="fc-badge fb-uc">Use Case</span></div>
+        <div class="fc-title">Customer success research that took a morning now takes ten minutes</div>
+        <div class="fc-body">The AI CSM agent pulls CRM data, support history, and external signals then writes the brief. The team reads and sends it.</div>
+        <div class="fc-metric"><span class="fc-num">10x</span><span class="fc-lbl">Faster than before</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INVESTORS -->
+<div class="inv-bg" id="investors">
+  <div class="inv-inner">
+    <div class="sec-label">For Investors and Partners</div>
+    <div class="sec-title">By the Numbers</div>
+    <p class="sec-sub">We are a publicly listed company with real products, real users, and revenue that has grown 16 times since our IPO.</p>
+    <div class="inv-grid">
+      <div class="inv-tile"><div class="inv-tile-num">2</div><div class="inv-tile-label">Flagship products in market</div></div>
+      <div class="inv-tile"><div class="inv-tile-num">7<span>+</span></div><div class="inv-tile-label">Use cases moving to production</div></div>
+      <div class="inv-tile"><div class="inv-tile-num">50K<span>+</span></div><div class="inv-tile-label">End users on our platforms</div></div>
+      <div class="inv-tile"><div class="inv-tile-num">16<span>x</span></div><div class="inv-tile-label">Revenue growth since IPO</div></div>
+      <div class="inv-tile"><div class="inv-tile-num">550<span>+</span></div><div class="inv-tile-label">People on the team</div></div>
+      <div class="inv-tile"><div class="inv-tile-num">3</div><div class="inv-tile-label">Active proof of concepts</div></div>
+    </div>
+    <div class="inv-badges">
+      <span class="inv-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>Listed on NSE</span>
+      <span class="inv-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>CMMI Level 3</span>
+      <span class="inv-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>550 plus team members</span>
+      <span class="inv-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>Also listed on BSE</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="cta-inner">
+    <h2>Want to move from pilot to production?</h2>
+    <p>We would love to talk. No pitch deck required. Just tell us what you are working on and where AI keeps getting stuck, and we will share what has actually worked for us.</p>
+    <div class="cta-row">
+      <a href="mailto:contact@ksolves.com" class="btn-white">Start a Conversation</a>
+      <a href="https://www.ksolves.com" target="_blank" class="btn-outline-white">Visit ksolves.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="foot-copy">2026 Ksolves India Limited. Emerging Ahead Always.</span>
+  <div class="foot-links">
+    <a href="https://www.ksolves.com">ksolves.com</a>
+    <a href="https://www.ksolves.com/investors">Investors</a>
+    <a href="https://www.ksolves.com/careers">Careers</a>
+    <a href="mailto:contact@ksolves.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  const m=document.getElementById('mobileMenu');
+  m.classList.toggle('open');
+}
+function closeMenu(){
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+function switchTab(id,el){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function filterFeed(cat,el){
+  document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.feed-card').forEach(c=>{
+    c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none';
+  });
+}
+// Close menu when clicking outside
+document.addEventListener('click',function(e){
+  const menu=document.getElementById('mobileMenu');
+  const hamburger=document.getElementById('hamburger');
+  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!hamburger.contains(e.target)){
+    menu.classList.remove('open');
+  }
+});
+</script>
+</body>
+</html>
